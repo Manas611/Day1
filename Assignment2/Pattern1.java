@@ -1,0 +1,23 @@
+// A
+// BC
+// CDE
+// DEFG
+
+import java.util.*;
+
+public class Pattern1 {
+    public static void main(String[] args) {
+        // int n = 4;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            char ch = 'A';
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print((char)(ch+i+j));
+            }
+            System.out.println();
+        }
+    }
+}
